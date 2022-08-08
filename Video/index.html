@@ -7,12 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body><header>
+<body>
+
+    <header>
     <video class="video-container"  muted autoplay loop type ="video" src="/Video/VID-20200226-WA0070.mp4"></video>
     <h1>Video Project</h1>
     <button class="switch-btn">
-        <span class="span">play</span>
-        <span>pause</span>
+        <span class="span">pause</span>
+        <!-- <span>pause</span> -->
         <span class="switch"></span>
     </button>
 </header>
@@ -24,9 +26,11 @@ let play = document.querySelector(".span")
 btn.addEventListener("click",function(){
     if(!btn.classList.contains("slide")){
         btn.classList.add("slide")
+        btn.innerText = "Play"
         video.pause()
     }else{
         btn.classList.remove("slide");
+        btn.innerText = "Pause"
         video.play()
     }
 })
