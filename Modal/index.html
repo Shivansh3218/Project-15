@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+  <body>
+  
+    <!-- Main center button and heading -->
+    <header class="hero">
+        <h1>Modal project</h1>
+      <div class="banner">
+        
+        <button class="modal-btn">
+          open modal
+        </button>
+      </div>
+    </header>
+    <!-- modal -->
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <h3>modal content</h3>
+        <p style="overflow: hidden;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ratione deleniti officia saepe corrupti incidunt at alias corporis earum aut temporibus voluptatibus unde reiciendis quia sint officiis, dolorem modi iure? Beatae  dolor similique dolores explicabo magnam, saepe ipsa deserunt quasi ab enim officiis aperiam! A quia mollitia similique qui!</p>
+        <button class="close-btn">X</button>
+      </div>
+    </div>
+    <!-- javascript -->
+    <script >
+        const modalBtn = document.querySelector(".modal-btn");
+const modal = document.querySelector(".modal-overlay");
+const closeBtn = document.querySelector(".close-btn");
+
+modalBtn.addEventListener("click", function () {
+  modal.classList.add("open-modal");
+});
+closeBtn.addEventListener("click", function () {
+  modal.classList.remove("open-modal");
+});
+    </script>
+  </body>
 </html>
