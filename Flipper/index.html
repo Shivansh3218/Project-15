@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Color Flipper || Hex</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+<h1>COLOR FLIPPER <hr></h1>
+  </header>
+    <button class="button" id="change-button">
+        CLICK ME TO SEE THE MAGIC
+    </button>
+<script>
+  let button = document.getElementsByClassName("button")
+  const color = document.getElementById('change-button')
+const textColor = document.getElementById('change-text')
+const body = document.body;
 
-    <!-- styles -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <nav>
-      <div class="nav-center">
-        <h4>color flipper</h4>
-        <ul class="nav-links">
-          <li><a href="index.html">simple</a></li>
-          <li><a href="hex.html">hex</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <div class="container">
-        <h2>background color : <span class="color">#f1f5f8</span></h2>
-        <button class="btn btn-hero" id="btn">click me</button>
-      </div>
-    </main>
-    <!-- javascript -->
-    <script>
-let color = ["green","red","rgba(133,122,200")]
+function randomColor(){
+    return Math.floor(Math.random()*255);
+}
 
-    </script>
-  </body>
+color.addEventListener('click',bgColor)
+
+function bgColor(){
+    const color1 = randomColor();
+    const color2 = randomColor();
+    const color3 = randomColor();
+
+    const rgbString = `rgb(${color1},${color2},${color3})`
+
+    body.style.background = rgbString;
+    button.style.backgroundColor = rgbString;
+}
+</script>
+
+</body>
 </html>
