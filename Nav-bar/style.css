@@ -68,8 +68,8 @@ Navbar
 ===============
 */
 nav {
-  background: var(--clr-white);
-  box-shadow: var(--light-shadow);
+  background: rgb(231, 241, 241);
+  box-shadow: 5px 2px 10px;
 }
 .nav-header {
   display: flex;
@@ -79,31 +79,32 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-primary-5);
+  color: black;
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-1);
+  color: rgb(0, 241, 16);
   transform: rotate(90deg);
+  transition: 1s;
 }
 .logo {
   height: 40px;
 }
 .links a {
-  color: var(--clr-grey-3);
+  color: rgb(0, 0, 0);
   font-size: 1rem;
   text-transform: capitalize;
-  letter-spacing: var(--spacing);
+  letter-spacing: 2px;
   display: block;
   padding: 0.5rem 1rem;
-  transition: var(--transition);
+  transition: 1s;
 }
 .links a:hover {
-  background: var(--clr-primary-8);
-  color: var(--clr-primary-5);
+  background: azure;
+  color: blue;
   padding-left: 1.5rem;
 }
 .social-icons {
@@ -112,7 +113,7 @@ nav {
 .links {
   height: 0;
   overflow: hidden;
-  transition: var(--transition);
+  transition: 1s;
 }
 .show-links {
   height: 10rem;
