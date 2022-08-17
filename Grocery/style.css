@@ -1,0 +1,151 @@
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+/*
+=============== 
+Grocery List
+===============
+*/
+.section-center {
+  background: azure;
+  border-radius: 10px;
+  transition:1s;
+  padding: 2rem;
+}
+.section-center:hover {
+  box-shadow: 5px 2px 10px;
+}
+.alert {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #000000;
+  background: #d4edda;
+}
+.grocery-form h3 {
+  color: black;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+#grocery {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background: azure;
+  border-radius: 10px;
+  border-color: 1px ;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: rgb(0, 0, 0);
+}
+#grocery::placeholder {
+  color: gray;
+}
+.submit-btn {
+  background: azure;
+  border: transparent;
+  margin-left: 30px;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  font-size: 0.85rem;
+}
+.submit-btn:hover {
+  background: azure;
+  box-shadow: 1px 1px 2px 1px;
+  color: green;
+}
+
+.grocery-container {
+  margin-top: 2rem;
+  transition: 1s;
+  visibility: hidden;
+}
+.show-container {
+  visibility: visible;
+}
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: 1s;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.grocery-item:hover {
+  color:rgb(31, 11, 11);
+  background: rgb(193, 227, 196);
+}
+.grocery-item:hover .title {
+  color: black;
+}
+.title {
+  margin-bottom: 0;
+  color: gray;
+  letter-spacing: 2px;
+  transition: 1s;
+}
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  transition: 1s;
+}
+.edit-btn {
+  color: rgb(0, 117, 0);
+}
+.edit-btn:hover {
+  color: rgb(0, 0, 0);
+}
+.delete-btn {
+  color: red;
+}
+.delete-btn:hover {
+  color: rgb(0, 0, 0);
+}
+.clear-btn {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border-color: transparent;
+  color: red;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  letter-spacing:2px;
+  cursor: pointer;
+  transition: 1s;
+  margin-top: 1.25rem;
+}
+.clear-btn:hover {
+  color: rgb(10, 123, 0);
+}
