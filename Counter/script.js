@@ -3,10 +3,6 @@ let display = document.getElementById("display")
 let decrement = document.getElementById("dec")
 let count = 0
 display.innerText =count
-// console.log(display.innerText)
-
-// incre.addEventListener("click",bomb)
-
 function bomb(){
      count++
     display.innerText =count
